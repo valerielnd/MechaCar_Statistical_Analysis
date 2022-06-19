@@ -37,7 +37,7 @@ We performed the multiple linear regression using the following steps:
 	
 We obtained the following results:
 
-![result_mlr](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/mpg_MLR.png)
+![result_mlr](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/mlr.png)
 
 According to the results, the vehicle length and ground clearance as well
 as the intercept has a significant impact on the MPG. 
