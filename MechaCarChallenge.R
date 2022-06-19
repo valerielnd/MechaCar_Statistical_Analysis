@@ -1,0 +1,24 @@
+library(tidyverse) # Load the dplyr package.
+
+MechaCar <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F) # Import MechaCar_mpg.csv as a dataframe
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar))  #generate multiple linear regression model
+
+suspension_coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F) # Import Suspension_Coil.csv as a dataframe
+
+total_summary <- suspension_coil %>% summarise(Mean = mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI)) # Create a total_summary dataframe using the summarize()
+
+lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarise(Mean = mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI)) # Create a lot_summary dataframe using the group_by() and the summarize() functions
+
+suspension_lot1 <- suspension_coil %>% subset(Manufacturing_Lot=="Lot1") # select only data points where the lot is lot1
+
+suspension_lot2 <- suspension_coil %>% subset(Manufacturing_Lot=="Lot2") # select only data points where the lot is lot2
+
+suspension_lot3 <- suspension_coil %>% subset(Manufacturing_Lot=="Lot3") # select only data points where the lot is lot3
+
+t.test(suspension_coil$PSI,mu=1500) # compare across all manufacturing lots to the population mean of 1,500 pounds per square inch
+
+t.test(suspension_lot1$PSI,mu=1500) # compare mean of lot1 to the population mean of 1,500 pounds per square inch
+
+t.test(suspension_lot2$PSI,mu=1500) # compare mean of lot2 to the population mean of 1,500 pounds per square inch
+
+t.test(suspension_lot3$PSI,mu=1500) # compare mean of lot3 to the population mean of 1,500 pounds per square inch
