@@ -37,7 +37,7 @@ We performed the multiple linear regression using the following steps:
 	
 We obtained the following results:
 
-![result_mlr]()
+![result_mlr](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/mpg_MLR.png)
 
 According to the results, the vehicle length and ground clearance as well
 as the intercept has a significant impact on the MPG. 
@@ -70,13 +70,13 @@ determine if the manufacturing process is consistent across production lots.
 In the first table, we computed the mean, median, variance, and standard deviation of the 
 suspension coil’s PSI continuous variable across all manufacturing lots:
 
-![suspension_coil_total]()
+![suspension_coil_total](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/suspension_coil_total.png)
 
 As the mean is 1498.78 and the median is 1500, the distribution of the suspension coil’s PSI continuous variable 
 across all manufacturing lots should be approximately normal where values farther from the mean occur less 
 frequently. 
 
-![normality]()
+![normality](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/normality.png)
 
 However, as the standard deviation is approximately 7.9 and the variance is 62.29, which does not exceed
 the design specification of 100 pounds, the data set has some variability, and we need to investigate more.
@@ -85,7 +85,7 @@ Since there is some variability in the data set, to determine in which productio
 less consistent, and where the design specification is not met, we computed the same PSI metrics for each lot
 in a second table:
 
-![psi_per_lot]()
+![psi_per_lot](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/psi_per_lot.png)
 
 In this table, as the mean and the median in lot one and lot 2 are equal, the distribution of 
 The suspension coil’s PSI for them is normal.
@@ -107,7 +107,7 @@ of 1,500 pounds per square inch.
 First, we performed a one-sample t-test to determine if the mean of all manufacturing lots is 
 statistically different from the population mean of 1,500 pounds per square inch.
 
-![all_lot]()
+![all_lot](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/comp_all_lots.png)
 
 As the p-value obtained is 0.06% and greater than our assumed significance level of 0.05%, we 
 fail to reject the null hypothesis, and we would state that the two means are statistically similar.
@@ -115,7 +115,7 @@ fail to reject the null hypothesis, and we would state that the two means are st
 Then we performed another one-sample t-test to determine if the mean of manufacturing lot1 is 
 statistically different from the population mean of 1,500 pounds per square inch.
 
-![lot1]()
+![lot1](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/comp_lot1.png)
 
 As the p-value obtained is 1% and greater than our assumed significance level of 0.05%, we 
 fail to reject the null hypothesis, and we would state that the two means are statistically similar.
@@ -123,7 +123,7 @@ fail to reject the null hypothesis, and we would state that the two means are st
 Then we performed another one-sample t-test to determine if the mean of manufacturing lot2 is 
 statistically different from the population mean of 1,500 pounds per square inch.
 
-![lot2]()
+![lot2](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/comp_lot2.png)
 
 As the p-value obtained is 0.6 and greater than our assumed significance level of 0.05%, we 
 fail to reject the null hypothesis, and we would state that the two means are statistically similar.
@@ -131,7 +131,7 @@ fail to reject the null hypothesis, and we would state that the two means are st
 Finally, we performed another one-sample t-test to determine if the mean of manufacturing lot3 is 
 statistically different from the population mean of 1,500 pounds per square inch.
 
-![lot3]()
+![lot3](https://github.com/valerielnd/MechaCar_Statistical_Analysis/blob/main/comp_lot3.png)
 
 As the p-value obtained is 0.04 and less than our assumed significance level of 0.05%, we 
 reject the null hypothesis and we could state that the two means are statistically different.
